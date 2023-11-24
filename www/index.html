@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>jQuery Mobile</title>
+    <link rel="stylesheet" href="./UTTIL/jquery.mobile-1.4.5.min.css" />
+    <script src="./UTTIL/jquery-1.11.1.min.js"></script>
+    <script src="./UTTIL/jquery.mobile-1.4.5.min.js"></script>
+    <style>
+      li {
+        list-style: none;
+      }
+      .picture {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+      .picture li {
+        float: left;
+        width: 50%;
+      }
+      .picture li a {
+        display: block;
+        margin: 5px;
+        border: 1px;
+      }
+      .picture li img {
+        display: block;
+        width: 50%;
+        height: auto;
+      }
+      .picture li img:hover {
+        display: block;
+        width: 100%;
+        height: auto;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div data-theme="b">
+      <div data-role="page" id="home">
+        <div data-role="header" data-theme="b">
+          <div style="display: flex; justify-content: center">
+            <img
+              src="https://kscms.ks.ac.kr/resources/homepage/kor/_Img/Content/uiinfo_13.png"
+              width="100"
+              height="100"
+            />
+          </div>
+          <h1>소프트웨어학과</h1>
+          <div data-role="navbar">
+            <ul>
+              <li><a href="#intro">학과소개</a></li>
+              <li><a href="#gallery">교육목표 및 인재상</a></li>
+              <li>
+                <a href="#wizard3-1" data-rel="dialog"
+                  >이수체계도 및 교육과정표</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div data-role="content" style="text-align: center">
+          <img
+            src="https://kscms.ks.ac.kr/attach/IMAGE/PopupMgr/PopupZoneUpload/2021/6/i5YZT4Ls1OKPtyai.JPG"
+            width="100%"
+            height="400"
+          />
+        </div>
+        <div style="display: flex; justify-content: space-around">
+          <div class="ui-bar ui-bar-a">
+            <경성대학교 소프트웨어학과 소개영상>
+            <iframe
+              width="100%"
+              height="240"
+              src="https://www.youtube.com/embed/EK8aOY77KMQ?si=Y4Ii_8iYE-IY-0Xq"
+            ></iframe>
+          </div>
+          <div class="ui-bar ui-bar-a">
+            <경성대학교 증명서 발급>
+            <iframe
+              width="100%"
+              height="240"
+              src="https://www.youtube.com/embed/-I3YqGpRisY?si=CO0BEklDafSw_5Hp"
+            ></iframe>
+          </div>
+        </div>
+        <div data-role="footer" data-position="fixed" data-theme="b">
+          <h1>
+            (48434) 부산 남구 수영로 309 8호관 608호 TEL : 051-663-5140 FAX :
+            051-- 사업자등록번호 : 617-82-00347
+          </h1>
+        </div>
+      </div>
+
+      <div data-role="page" id="intro" data-theme="b">
+        <div data-role="header" data-theme="b">
+          <a href="#home" data-icon="arrow-l" data-direction="reverse">처음</a>
+          <h1>학과소개</h1>
+        </div>
+        <div data-role="content">
+          <div style="text-align: center">
+            <img
+              src="./Image/monitor-1307227_1280.jpg"
+              width="100%"
+              height="330"
+            />
+          </div>
+          <div
+            data-role="collapsible-set"
+            data-theme="b"
+            data-content-theme="e"
+          >
+            <div data-role="collapsible" data-collapsed="false">
+              <h3>학과 소개</h3>
+              <p>
+                소프트웨어학과는 Computer Science 분야의 기반 지식을 바탕으로
+                기업에서 요구하는 IT 기술을 배양하여 창의적이고 복합적
+                문제해결능력을 갖춘 미래형 소프트웨어 인재를 양성하기 위해
+                설립되었습니다.
+              </p>
+            </div>
+            <div data-role="collapsible">
+              <h3>교육과정</h3>
+              <p>
+                본 학과의 교육과정에서는 이산수학,전산수학, 컴퓨터구조, 운영체제
+                , 자료구조, 알고리즘, 데이터베이스, 컴퓨터 네트워크등의 기반
+                지식을 습득하고, 프로그래밍 실습 교육과 프로젝트 수행 교육 등을
+                통해 소프트웨어 설계 및 구현 능력을 배양하며, 4차 산업혁명에
+                준비된 인재 양성을 위해 머신러닝(machine learning),인공지능 및
+                병렬 컴퓨팅 교육등을 실시합니다.
+              </p>
+            </div>
+            <div data-role="collapsible">
+              <h3>진로탐색</h3>
+              <p>
+                본 학과 졸업생들은 웹 및 앱 개발자, 게임 개발자,
+                서버/네트워크/데이터베이스/보안 관리자 , 전산직 공무원, 프리랜스
+                프로그래머 등으로 활동할 수 있으며, IT 분야 대기업, 중견 및 중소
+                업체와 금융권 및 일반 기업체 IT 부서, 전산학 관련 국내외 대학원
+                등으로도 진출할 수 있습니다.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div data-role="footer" data-position="fixed" data-theme="b">
+          <h1>
+            (48434) 부산 남구 수영로 309 8호관 608호 TEL : 051-663-5140 FAX :
+            051-- 사업자등록번호 : 617-82-00347
+          </h1>
+        </div>
+      </div>
+
+      <div data-role="page" id="movie" data-theme="b">
+        <div data-role="header" data-position="fixed" data-theme="b">
+          <h1>독도 영상</h1>
+        </div>
+        <div data-role="content">
+          <div class="ui-bar ui-bar-a">외교부 독도 소개 동영상</div>
+          <br />
+          <li>
+            <iframe
+              width="100%"
+              height="240"
+              src="http://www.youtube.com/embed/muB4_LNZ2Rk"
+            ></iframe>
+          </li>
+          <br />
+          
+        <div data-role="footer" data-theme="b"></div>
+      </div>
+
+      <div data-role="page" id="wizard3-1">
+        <div data-role="header">
+          <h1>이수체계도</h1>
+        </div>
+        <div data-role="content">
+          <br />
+          <img src="./Image/image1.png" alt="" width="100%" />
+        </div>
+        <div data-role="footer">
+          <a href="#home" data-direction="reverse">이전</a>
+          <a href="#wizard3-2" data-rel="dialog" data-transition="slide"
+            >다음</a
+          >
+        </div>
+      </div>
+
+      <div data-role="page" id="wizard3-2">
+        <div data-role="header">
+          <h1>교육과정표</h1>
+        </div>
+        <div data-role="content">
+          <br />
+          <img src="Image/image2.png" alt="" width="100%" />
+        </div>
+        <div data-role="footer">
+          <a href="#wizard3-1" data-direction="reverse">이전</a>
+          <a href="#home">처음</a>
+        </div>
+      </div>
+
+      <div data-role="page" id="gallery" data-theme="b">
+        <div data-role="header" data-position="fixed" data-theme="b">
+          <a href="#home" data-icon="arrow-l" data-direction="reverse">처음</a>
+          <h1>교육목표 및 인재상</h1>
+        </div>
+        <div data-role="content">
+          <img src="./Image/9MYngtikh4SDYzYPr0rK.jpg" width="100%" />
+        </div>
+        <div data-role="footer" data-position="fixed" data-theme="b">
+          <h1>
+            (48434) 부산 남구 수영로 309 8호관 608호 TEL : 051-663-5140 FAX :
+            051-- 사업자등록번호 : 617-82-00347
+          </h1>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
